@@ -19,8 +19,8 @@ var localDate = thisDay.toLocaleDateString();
 var localTime = thisDay.toLocaleTimeString();
 
 /* Display the current date and time */
-document.getElementById("currentTime").innerHTML = "<span>"localDate"</span><span>"localTime"</span>"
-
+document.getElementById("currentTime").innerHTML =
+   "<span>" + localDate + "</span><span>" + localDate + "</span">
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
    var jDate = new Date("July 4, 2018");
