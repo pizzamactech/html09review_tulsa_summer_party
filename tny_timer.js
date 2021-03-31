@@ -23,7 +23,7 @@ var localTime = thisDay.toLocaleTimeString();
 document.getElementById("currentTime").innerHTML =
 "<span>" + localDate + "</span><span>" + localDate + "</span">   
 
-var nextJuly4(thisDay);
+var j4Date = nextJuly4(thisDay);
  j4Date.sethours(21);
 
 /* Calculate the days,hours,minutes, and seconds left in the current hour */
