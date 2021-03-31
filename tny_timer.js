@@ -29,9 +29,9 @@ function nextJuly4(currentDate) {
    return jDate;
 }
 
-function nextJuly4(thisDay) [
+function nextJuly4(thisDay) {
  j4Date.sethours(21);
-]
+}
 /* Calculate the days,hours,minutes, and seconds left in the current hour */
   var daysLeft = (j4Date - thisDay)/(1000*60*60*24);
   var hrsLeft = (daysLeft - Math.floor(daysLeft))*24;
