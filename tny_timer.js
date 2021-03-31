@@ -9,13 +9,14 @@
    Date:  3/30/2021 
 
 */
+/* Execute the function to run and display the countdown clock*/
 showClock();
 setInterval("showClock()",1000);
 
 /* Function to create and show the countdown clock */
 function showClock() {
 /* Store the current date and time */
-var thisDay = new Date("May 19, 2018 9:31:27");
+var thisDay = new Date();
 var localDate = thisDay.toLocaleDateString();
 var localTime = thisDay.toLocaleTimeString();
 
@@ -27,16 +28,16 @@ var j4Date = nextJuly4(thisDay);
    j4Date.setHours(21);
 
 /* Calculate the days,hours,minutes, and seconds left in the current hour */
-  var daysLeft = (j4Date - thisDay)/(1000*60*60*24);
-  var hrsLeft = (daysLeft - Math.floor(daysLeft))*24;
-  var minsLeft = (hrsLeft - Math.floor(hrsLeft))*60;
-  var secsLeft = (minsLeft - Math.floor(minsLeft))*60;
+  var days = (j4Date - thisDay)/(1000*60*60*24);
+  var hrs = (days - Math.floor(daysLeft))*24;
+  var mins = (hrs - Math.floor(hrsLeft))*60;
+  var secs = (mins - Math.floor(minsLeft))*60;
  
 /* Display the time left until July 4th */
-  document.getElementById("days").textContent = Math.floor(daysLeft);
-  document.getElementById("hrs").textContent = Math.floor(hrsLeft);
-  document.getElementById("mins").textContent = Math.floor(minsLeft);
-  document.getElementById("secs").textContent = Math.floor(secsLeft);
+  document.getElementById("days").textContent = Math.floor(days);
+  document.getElementById("hrs").textContent = Math.floor(hrs);
+  document.getElementById("mins").textContent = Math.floor(mins);
+  document.getElementById("secs").textContent = Math.floor(secs);
 }
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
