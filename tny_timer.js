@@ -21,7 +21,7 @@ var localTime = thisDay.toLocaleTimeString();
 
 /* Display the current date and time */
 document.getElementById("currentTime").innerHTML =
-"<span>" + localDate + "</span><span>" + localDate + "</span">   
+"<span>" + localDate + "</span><span>" + localDate + "</span>"   
 
 var j4Date = nextJuly4(thisDay);
    j4Date.setHours(21);
