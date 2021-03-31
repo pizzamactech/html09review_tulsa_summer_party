@@ -34,10 +34,10 @@ var j4Date = nextJuly4(thisDay);
   var secs = (mins - Math.floor(mins))*60;
  
 /* Display the time left until July 4th */
-  document.getElementById("days").textContent = Math.floor(days);
-  document.getElementById("hrs").textContent = Math.floor(hrs);
-  document.getElementById("mins").textContent = Math.floor(mins);
-  document.getElementById("secs").textContent = Math.floor(secs);
+  document.getElementById("dLeft").textContent = Math.floor(days);
+  document.getElementById("hLeft").textContent = Math.floor(hrs);
+  document.getElementById("mLeft").textContent = Math.floor(mins);
+  document.getElementById("sLeft").textContent = Math.floor(secs);
 }
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
