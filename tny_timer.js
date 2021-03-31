@@ -29,9 +29,9 @@ var j4Date = nextJuly4(thisDay);
 
 /* Calculate the days,hours,minutes, and seconds left in the current hour */
   var days = (j4Date - thisDay)/(1000*60*60*24);
-  var hrs = (days - Math.floor(daysLeft))*24;
-  var mins = (hrs - Math.floor(hrsLeft))*60;
-  var secs = (mins - Math.floor(minsLeft))*60;
+  var hrs = (days - Math.floor(days))*24;
+  var mins = (hrs - Math.floor(hrs))*60;
+  var secs = (mins - Math.floor(mins))*60;
  
 /* Display the time left until July 4th */
   document.getElementById("days").textContent = Math.floor(days);
